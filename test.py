@@ -4,7 +4,6 @@ import pandas as pd
 
 #To Do:
 #Change Shiny Vault data to correct set in csv
-#TURN INTO WEB APP INSTEAD OF GUI APPLICATION :)
 #Change state of card drop down to false until set is picked
 #make Graded or Not Graded option
 data= pd.read_csv("C:\\Users\\utbea\Desktop\\Python\\TCG Price Tracker\\TCG-Price\\cards.csv", usecols=['set', 'name', 'set_num'])
@@ -16,7 +15,6 @@ root.geometry('1280x720')
 data.set_index('name', inplace=True)
 
 def set_select(self):
-    #print(data[(data['set'] == self)])
     card_names=data[(data['set'] == self)].loc[:, 'set_num' ].to_dict()
     sorted_card_names=[]
     for k,v in card_names.items():
@@ -25,7 +23,6 @@ def set_select(self):
     sorted_card_names.sort()
     select_card.configure(values=sorted_card_names)
     
-    #TURN ROW DATA INTO LIST VALUE EX: [pokemon setnum, pokemon2 setum2, etc.]
 
 set_names=data['set'].tolist()
 set_names=list(set(set_names))
