@@ -3,7 +3,7 @@ A python GUI program that allows you to track the price of a pokemon card based 
 It will display the set name, card name, card number, sell date, sell price and a picture of the card.
 
 
-The GUI was created using Tkinter and Pandas was used to fill the set and card selection drop down boxes with data from a csv file.
+The GUI was created using Custom Tkinter and Pandas was used to fill the set and card selection drop down boxes with data from a csv file.
 BeautifulSoup is used to retrieve ebay listings and their information based on the card and set selected.
 After the data is retrieved and filtered it is displayed in chronological order along with the picture of the card from the listing.
 
