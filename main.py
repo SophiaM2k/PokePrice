@@ -23,6 +23,7 @@ customtkinter.set_default_color_theme('dark-blue')
 
 root = customtkinter.CTk()
 root.geometry('1280x720')
+root.iconbitmap('C:\\Users\\utbea\\Desktop\Python\\TCG Price Tracker\\TCG-Price\\pokeball.jpg')
 data.set_index('name', inplace=True)
 buttons=customtkinter.CTkFrame(root, bg_color='red')
 buttons.pack()
